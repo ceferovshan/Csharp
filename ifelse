@@ -1,0 +1,34 @@
+using System;
+class Program 
+{
+    static void Main(string[] args)
+    {
+        /*
+        int eded;
+        Console.WriteLine("Ededin tek ve ya cut olmagini oyrenmek ucun bir reqem qeyd edin ");
+        eded = Convert.ToInt32(Console.ReadLine());
+        int a = eded % 2;
+        if (a == 0)
+        { 
+         Console.WriteLine("Qeyd etdiyiniz cut reqemdir");
+        }
+        else 
+        {
+            Console.WriteLine("Tek reqemdir");
+        }
+        Console.ReadKey();
+        */
+        int b, c, d;
+        Console.WriteLine("Birinci ededi qeyd edin: ");
+        b = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ikinci ededi qeyd edin: ");
+        c = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ucuncu ededi qeyd edin ");
+        d = Convert.ToInt32(Console.ReadLine());
+        if (b<=c && b<=c)
+        {
+            Console.WriteLine(b + " En boyuk reqemdir");
+        }
+        Console.ReadKey();
+    }
+}
