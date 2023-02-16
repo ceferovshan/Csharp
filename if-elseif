@@ -1,0 +1,26 @@
+using System;
+class Program 
+{
+    static void Main(string[] args)
+    {
+        double temperatur;
+        Console.WriteLine("Maddenin istilikderecesini daxil edin: ");
+        temperatur = Convert.ToDouble(Console.ReadLine()); ;
+        if (temperatur > 100)
+        {
+            Console.WriteLine("Madde plazma halindadir: ");
+        }
+        else if (temperatur <100 && temperatur > 0)
+        {
+            Console.WriteLine("Madde qaz halindadir ");
+        }
+        else if (temperatur == 0)
+        {
+            Console.WriteLine("Madde taz halindadir ");
+        }
+        else
+        {
+            Console.WriteLine("Madde su halindadir");    
+        }
+    }
+}
