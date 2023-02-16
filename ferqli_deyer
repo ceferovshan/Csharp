@@ -1,0 +1,31 @@
+using System;
+class Program 
+{
+    static void Main(string[] args)
+    {
+        int a = 67;
+        int b = 33;
+        int c = (a + b)-a;
+        int d = b = a;
+        a = c; //a'ni cagiranda b'nin deyerin getirir,b ni cagiranda a'nin
+
+        Console.WriteLine(a);
+        Console.WriteLine(b);
+        Console.ReadKey();  
+        
+        int z = 67;
+        int w = 33;
+        int y = z;
+        z = w;
+        w = y; //a'ni cagiranda b'nin deyerin getirir,b ni cagiranda a'nin
+       
+
+        Console.WriteLine(z);
+        Console.WriteLine(w);
+        Console.ReadKey();  
+        
+        
+    }
+}
+
+
