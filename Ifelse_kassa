@@ -1,0 +1,119 @@
+/*Console.WriteLine("Riyaziyyat 0/10 bal ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Rus-dili 0/10 bal ");
+int b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Idman 0/10 bal ");
+int c = Convert.ToInt32(Console.ReadLine());
+
+double z = (a + b + c);
+
+if (z >= 26)
+{
+    Console.WriteLine("Tebrik edirem. Imtahani 'ela' qiymetle bitirdin.");
+}
+else if (z >= 20 && z < 26)
+{
+    Console.WriteLine("Tebrik edirem. Imtahani 'yaxsi' qiymetle bitirdin ");
+}
+else if (z >= 15 && z < 20)
+{
+    Console.WriteLine("O qederde pis deyil");
+}
+else if (z >= 10 && z < 15)
+{
+    Console.WriteLine("Kafi,cox pis neticedir");
+}
+else
+{
+    Console.WriteLine("Sinifde qaldin");
+}
+Console.ReadKey();*/
+
+using System.Runtime.Intrinsics.X86;
+
+String a = "Araq", b = "Caxir", c = "Viski";
+Console.WriteLine("Mehsullari elave edin.Araq,Caxir,Viski");
+int a1 = 5, b1 = 3, c1 = 12;
+String abc = Convert.ToString(Console.ReadLine());
+if (abc == a || abc == b || abc == c)
+{
+    Console.WriteLine("Sayini qeyd edin");
+    int a1b1c1 = Convert.ToInt32(Console.ReadLine());
+    if (abc == a)
+    {
+        double a1b1c1a1 = a1b1c1 * a1;
+        Console.WriteLine("Odenilecek mebleg: " + a1b1c1a1 + " Azn");
+        Console.WriteLine("Odenis yolu secin true-bank,false-nagd");
+        bool odenisyolu1 = true, odenisyolu2 = false;
+        bool odenisyolu = Convert.ToBoolean(Console.ReadLine());
+        if (odenisyolu == odenisyolu1)
+        {
+            bool bank = true, bonus = false;
+            Console.WriteLine("Odenis Bank yolu ile ya bonus kartla odenilecek. Zehmet olmasa secim edin. true-Bank,false-BonusKart");
+            bool bank_bonus = Convert.ToBoolean(Console.ReadLine());
+            if (bank_bonus == bank)
+            {
+                long bankkodu1 = 123;
+                Console.WriteLine("Odenis bank yolu ile olacaq. Zehmet olmasa 16 reqemli kodu yigin 123 ");
+                long bankkodu = Convert.ToInt64(Console.ReadLine());
+                if (bankkodu == bankkodu1)
+                {
+                    double mebleg_balans = 1000;
+                    Console.WriteLine("Meblegi daxil edin: ");
+                    double odenilecek_mebleg = Convert.ToDouble(Console.ReadLine());
+                    if (odenilecek_mebleg == a1b1c1a1)
+                        if (odenilecek_mebleg <= mebleg_balans)
+                        {
+                            double balans_goster = mebleg_balans - odenilecek_mebleg;
+                            Console.WriteLine("Odenis ugurla odenildi Balans: " + balans_goster);
+                            Console.WriteLine("Elde edilen bonus : " + odenilecek_mebleg * 0.01 + " azn");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Balansda kifayet qeder vesait yoxdur");
+                        }
+                    else
+                    {
+                        Console.WriteLine("Odenilecek meblegi duzgun qeyd edin");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Kodu sehf qeyd etmisiz");
+                }
+            }
+            else if (bank_bonus == bonus)
+            {
+                double umumibonus = 12;
+                Console.WriteLine("Odenis bonuskart yolu ile olacaq.");
+                if (a1b1c1a1 <= umumibonus)
+                {
+                    double qaliqbonus = umumibonus - a1b1c1a1;
+                    Console.WriteLine("Bonusla odenis ugurla heyata kecirildi. Qaliq bonus: " + qaliqbonus + " azn");
+                }
+                else
+                {
+                    Console.WriteLine("Bonus kartinda kifayyet qeder mebleg yoxdur.Hal hazirda balansiniz " + umumibonus + " azn teskil edir");
+                }
+            }
+        }
+        else if (odenisyolu == odenisyolu2)
+        {
+            Console.WriteLine("Nagd odenisle odemeyi secdiniz");
+            Console.WriteLine("Odenis ugurla heyata kecirildi. Bizi secdyiniz ucun tesekkur edirik");
+        }
+    }
+    else if (abc == b)
+    {
+        Console.WriteLine("Odenilecek mebleg : " + a1b1c1 * b1 + " Azn");
+    }
+    else if (abc == c)
+    {
+        Console.WriteLine("Odenilecek mebleg : " + a1b1c1 * c1 + " Azn");
+    }
+}
+else
+{
+    Console.WriteLine("Mehsul kodunu duzgun qeyd edin");
+}
+Console.ReadKey();
