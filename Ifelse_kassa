@@ -4,9 +4,9 @@ Console.WriteLine("Rus-dili 0/10 bal ");
 int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Idman 0/10 bal ");
 int c = Convert.ToInt32(Console.ReadLine());
-
+ 
 double z = (a + b + c);
-
+ 
 if (z >= 26)
 {
     Console.WriteLine("Tebrik edirem. Imtahani 'ela' qiymetle bitirdin.");
@@ -23,14 +23,14 @@ else if (z >= 10 && z < 15)
 {
     Console.WriteLine("Kafi,cox pis neticedir");
 }
-else
+else 
 {
     Console.WriteLine("Sinifde qaldin");
 }
 Console.ReadKey();*/
-
+ 
 using System.Runtime.Intrinsics.X86;
-
+ 
 String a = "Araq", b = "Caxir", c = "Viski";
 Console.WriteLine("Mehsullari elave edin.Araq,Caxir,Viski");
 int a1 = 5, b1 = 3, c1 = 12;
