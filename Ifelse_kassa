@@ -31,7 +31,6 @@ while (true)
             while (true)
             {
                 Console.WriteLine("Sayini qeyd edin");
-           
                 int a1b1c1 = Convert.ToInt32(Console.ReadLine());
                 if (abc == a)
                 {
