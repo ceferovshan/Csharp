@@ -4,19 +4,19 @@ String login;
 String password;
 while (true)
 {
-Console.Write("Login: ");
-login = Console.ReadLine();
-Console.Write("Password: ");
-password = Console.ReadLine();
-if (login == db_login && password == db_password)
-{
-Console.WriteLine("xos gelmisen teze il");
-break;
-}
-else
-{
-Console.WriteLine("Login ve ya sifre yalnisdir");
-}
+    Console.Write("Login: ");
+    login = Console.ReadLine();
+    Console.Write("Password: ");
+    password = Console.ReadLine();
+    if (login == db_login && password == db_password)
+        {
+            Console.WriteLine("Xosh geldiniz " + db_login);
+            break;
+        }
+    else
+        {
+            Console.WriteLine("Login ve ya sifre yalnisdir");
+        }
 }
 while (true)
 {
