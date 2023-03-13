@@ -1,9 +1,23 @@
-Console.Write("Login : ");
-String login = Convert.ToString(Console.ReadLine());
-Console.Write("Password : ");
-String password = Convert.ToString(Console.ReadLine());
-String db_login = "Rovshan";
-String db_password = "123456";
+String db_login = "Rovshan"; 
+String db_password = "123"; 
+String login; 
+String password; 
+while (true) 
+    { 
+    Console.Write("Kullanıcı adınızı girin: "); 
+    login = Console.ReadLine(); 
+    Console.Write("Şifrenizi girin: "); 
+    password = Console.ReadLine(); 
+        if (login == db_login && password == db_password) 
+            { 
+            Console.WriteLine("xos gelmisen teze il"); 
+            break; 
+            } 
+            else 
+            { 
+            Console.WriteLine("Login ve ya sifre yalnisdir"); 
+            } 
+    }
 if (login == db_login && password == db_password)
 {
     String a = "winston", b = "west", c = "vikeroy";
