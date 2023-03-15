@@ -1,0 +1,32 @@
+int[] sayi = {0,1,2,3,4,5,6,7,8,9};
+foreach (int item in sayi)
+{
+    Console.WriteLine(item);
+}
+
+int[] sayi2 = new int[10];
+sayi2[0] = 0;
+sayi2[1] = 1;
+sayi2[2] = 2;
+sayi2[3] = 3;
+sayi2[4] = 4;
+sayi2[5] = 5;
+sayi2[6] = 6;
+sayi2[7] = 7;
+sayi2[8] = 8;
+sayi2[9] = 9;
+foreach (int item2 in sayi2)
+{
+    Console.Write(item2 );
+}
+
+int[] sayi3 = new int[10];
+
+for (int i = 0; i < sayi3.Length; i++)
+{
+    sayi3[i] = i;
+}
+foreach (int item2 in sayi3) 
+{
+    Console.WriteLine(item2);
+}
