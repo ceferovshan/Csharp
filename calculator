@@ -1,0 +1,27 @@
+Console.WriteLine("Birinci ededi daxil edin: ");
+decimal a1 = Convert.ToDecimal(Console.ReadLine());
+
+Console.WriteLine("ikinci ededi daxil edin: ");
+decimal a2 = Convert.ToDecimal(Console.ReadLine());
+
+Console.WriteLine("Islem : / *  - +");
+String a3 = Convert.ToString(Console.ReadLine());
+
+if (a3 == "/")
+{
+    Console.WriteLine(a1 / a2);
+}
+else if (a3 == "*")
+{
+    Console.WriteLine(a1 * a2);
+}
+else if (a3 == "-")
+{
+    Console.WriteLine(a1 - a2);
+}
+else if (a3 == "+")
+{
+    Console.WriteLine(a1 + a2);
+}
+else
+    Console.WriteLine("Nese o deyil");
