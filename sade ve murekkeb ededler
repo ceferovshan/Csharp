@@ -1,0 +1,23 @@
+Console.WriteLine("Reqem yaz: ");
+long num = Convert.ToInt64(Console.ReadLine());
+bool bol = true;
+
+int n = 2;
+while (n <= Math.Sqrt(num))
+{
+    if (num % n == 0)
+    {
+        bol = false;
+        break;
+    }
+    n++;
+}
+
+if (bol)
+{
+    Console.WriteLine("Sade");
+}
+else
+{
+    Console.WriteLine("Murekkeb");
+}
