@@ -1,0 +1,66 @@
+List<int> reqemler = new List<int> { 10, 20, 30, 40, 50, 70, 33, 45 };
+int boyukreqem = reqemler.OrderByDescending(x => x).First();
+Console.WriteLine("En büyük sayı: " + boyukreqem);
+
+Bu kod parçasında, OrderByDescending() yöntemi kullanılarak, List<int> nesnesindeki sayılar büyükten küçüğe sıralanır. 
+Daha sonra, First() yöntemi kullanılarak sıralanmış listenin ilk öğesi (en büyük sayı) elde edilir. 
+Son olarak, Console.WriteLine() yöntemi kullanılarak en büyük sayı ekrana yazdırılır.
+Bu kod parçası, önceki örnektekiyle aynı sonucu verecektir, ancak daha kısa bir şekilde yazılmıştır.
+
+      /***  *** ***/
+      
+List<int> reqemler = new List<int> { 10, 20, 30, 40, 50, 70, 33, 45 };
+reqemler.Sort();
+reqemler.Reverse();
+int boyukreqem = reqemler[0];
+Console.WriteLine();
+Console.WriteLine("En büyük sayı: " + boyukreqem);
+
+Bu kod parçası, bir List<int> nesnesi oluşturarak bir dizi sayı ekler. 
+Daha sonra, Sort() yöntemi kullanılarak bu sayılar sıralanır ve ardından Reverse() yöntemi kullanılarak ters çevrilir. 
+En büyük sayı, listedeki ilk öğedir (çünkü liste ters çevrilir). Son olarak, Console.WriteLine() yöntemi kullanılarak en büyük sayı ekrana yazdırılır.
+Bu kod parçası doğru şekilde çalışacak ve listenin en büyük sayısını ekrana yazdıracaktır. 
+Ancak, kodun düzgün bir şekilde çalışması için, öncelikle using System.Collections.Generic; ifadesinin kod dosyasının başına eklenmesi gerekiyor.
+
+      /***  *** ***/
+      
+int[] sayilar = new int[5];
+int sayi;
+for (int i = 1; i <= sayilar.Length; i++)
+{
+    Console.Write(i + " Zehmet olmasa ededi daxil edin: ");
+    sayi = int.Parse(Console.ReadLine());
+    sayilar[i-1] = sayi;
+}
+Array.Sort(sayilar);
+Console.WriteLine("En Buyuk {0}\nEn Kucuk {1}",sayilar[sayilar.Length-1], sayilar[0]);
+
+Bu, C# dilinde kullanılan bir kod örneğidir. Öncelikle, 5 elemanlı bir integer dizisi olan "sayilar" tanımlanır. 
+Daha sonra, bir for döngüsü kullanarak bu dizinin elemanları kullanıcı tarafından girilir.
+Döngü 1'den başlayarak dizinin uzunluğuna kadar çalışır (dizilerin indisleri 0'dan başlar, 
+bu nedenle döngüde "i-1" kullanarak doğru indisleri alıyoruz). Döngünün her adımında, 
+kullanıcıya bir sayı girmesi için bir mesaj gösterilir. Kullanıcının girdiği sayı "sayi" değişkeninde saklanır ve daha sonra "sayilar" dizisine eklenir.
+Tüm sayılar girildikten sonra, Array.Sort yöntemi kullanılarak "sayilar" dizisi sıralanır. 
+Daha sonra Console.WriteLine() yöntemi kullanılarak, sıralanmış dizinin son elemanı en büyük sayı olarak, ilk elemanı ise en küçük sayı olarak yazdırılır.
+Bu kod, basit bir dizi girişi ve sıralama işlemi örneğidir. Ancak kullanıcı girdilerinin hatalarını ele almamaktadır, 
+bu nedenle kullanıcıların yanlış türde bir veri girmesi veya boş bir girdi yapması durumunda hata oluşabilir. 
+Bu tür hataları ele almak için ek hata kontrolü yapmak gerekebilir.
+
+      /***  *** ***/
+
+List<int> reqemler = new List<int> { 10, 20, 30, 40, 50, 70, 33, 45 };
+reqemler.Sort();
+reqemler.Reverse();
+int boyukreqem = reqemler[0];
+Console.WriteLine();
+Console.WriteLine("En büyük sayı: " + boyukreqem);
+
+Bu C# kod örneği, bir tamsayı listesi (List<int>) içerisindeki en büyük sayıyı bulmak için kullanılır.
+İlk olarak, "reqemler" adında bir tamsayı listesi oluşturulur ve içine bazı sayılar eklenir. Daha sonra, 
+liste "Sort()" yöntemiyle küçükten büyüğe doğru sıralanır ve "Reverse()" yöntemiyle de büyükten küçüğe doğru ters çevrilir.
+En son olarak, "boyukreqem" adında bir tamsayı değişkeni tanımlanır ve bu değişkene "reqemler" listesinin ilk elemanı atanır. 
+Çünkü, liste büyükten küçüğe sıralandığından, ilk eleman en büyük sayıdır.
+Son olarak, "Console.WriteLine()" yöntemi kullanılarak en büyük sayı ekrana yazdırılır.
+Bu kod, bir tamsayı listesi içerisindeki en büyük sayıyı bulmak için oldukça basit bir yöntem kullanır. 
+Ancak, liste içerisinde birden fazla en büyük sayı varsa sadece bir tanesini döndürecektir. 
+Ayrıca, listenin boş olması durumunda hata verebilir. Bu durumları da kontrol etmek önemlidir.
