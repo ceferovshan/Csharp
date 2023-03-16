@@ -10,3 +10,13 @@ for (int i = 1; i <= sayilar.Length; i++)
 }
 Array.Sort(sayilar);
 Console.WriteLine("En Buyuk {0}\nEn Kucuk {1}",sayilar[sayilar.Length-1], sayilar[0]);
+
+***         ***         ***
+
+List<int> reqemler = new List<int> { 10, 20, 30, 40, 50, 70, 33, 45 };
+reqemler.Sort();
+reqemler.Reverse();
+int boyukreqem = reqemler[0];
+Console.WriteLine();
+Console.WriteLine("En büyük sayı: " + boyukreqem);
+
