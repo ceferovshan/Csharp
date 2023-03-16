@@ -1,0 +1,40 @@
+Console.WriteLine("Listler 1\n");
+List<int> sayilar = new List<int > ();
+sayilar.Add(40);
+sayilar.Add(70);
+
+foreach (int sayi in sayilar)
+{
+    Console.WriteLine(sayi + " ");
+}
+
+Console.WriteLine("diziler 1\n");
+int[] sayilar2 = new int[5];
+sayilar2[0] = 15;
+sayilar2[1] = 22;
+
+foreach (int name2 in sayilar2)
+{
+    if (name2 != 0)
+    {
+        Console.WriteLine(name2 + " ");
+    }
+}
+
+Console.WriteLine("Listler 2\n");
+string[] names = { "Rovshan", "Elxan", "Ceyhun", "Elchin", "Huseyn" }; //collaction adlanir
+List<string> username = new List<string>(names);
+username.Add("Qulam Mirze"); //Sonra elave edir
+username.Insert(1,"Hasan"); //Birinci indeksi elave edirsen sonra adi qeyd edirsen
+username.Insert(1, "Qulamli"); //Sonda yazilan index 1 goturu.
+username.Remove("Qulamli"); //silir melumati
+username.RemoveAt(3); //indexse gore silir
+
+username.Sort();//Kucukden buyuye siralama
+username.Reverse();// Buyukden kucuye duzur Sort edenden sonra yalniz. Ve ya Collactionu tersden gosterir
+
+foreach (string ad in username)
+{
+    Console.WriteLine(ad);
+}
+
